@@ -40,6 +40,7 @@
 		</div>
 		<div id="grey-background">
 
+			<div id="intro-text-parent">
 			<div id="intro-text">
 				<div id="intro-text-box">
 					<h1><span id="hi">Hi</span> <span id="Excla">!</span></h1>
@@ -49,6 +50,7 @@
 							<a id="cv"href="TseringCVF2.pdf"><p>CV</p></a>
 						</div>
 				</div>
+			</div>
 			</div>
 
 			<!-- about me -->
@@ -60,7 +62,7 @@
 					<div  class ="about-me-border"></div>
 
 					</h1>
-				<p id="about-slide-animation">Hi.<br>
+				<p id="about-slide-animation">
 				    This is Tsering Dhoundup.I am a young learner who is looking for the pace to work with company that works for technology. 
 					I have been working by myself from home since the day I quit my schooling. I have spent the quite few years learning Web Development as mentioned below
 					in the field of skills.During my self- learning phase I tried to develop a simple Game. My passion is to develop Games and Website.
@@ -87,8 +89,7 @@
 						</div>
 						<div id="skill-text-content">
 							<h1>HTML</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos perspiciatis fugiat? Iure, soluta? Facere quos nobis aperiam fugiat
-							libero quaerat quasi deleniti, accusamus, possimus repellat, illo error alias magni.</p>
+							<p>HTML is the universal markup language for the Web. HTML lets you format text, add graphics, create links, input forms, frames and tables, etc., and save it all in a text file that any browser can read and display</p>
 						</div>
 					</div>
 
@@ -100,8 +101,7 @@
 						</div>
 						<h1>CSS</h1>
 						<div id="skill-text-content">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos perspiciatis fugiat? Iure, soluta? Facere quos nobis aperiam fugiat
-								libero quaerat quasi deleniti, accusamus, possimus repellat, illo error alias magni.</p>
+							<p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
 						</div>
 					</div>
 
@@ -116,8 +116,7 @@
 						</div>
 						<div id="skill-text-content">
 							<h1>JAVASCRIPT</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos perspiciatis fugiat? Iure, soluta? Facere quos nobis aperiam fugiat
-								libero quaerat quasi deleniti, accusamus, possimus repellat, illo error alias magni.</p>
+							<p>JavaScript is a multi-paradigm, dynamic language with types and operators, standard built-in objects, and methods. Its syntax is based on the Java and C languages — many structures from those languages apply to JavaScript as well. JavaScript supports object-oriented programming with object prototypes and classes</p>
 						</div>
 					</div>
 
@@ -130,9 +129,7 @@
 						</div>
 						<h1>c#</h1>
 						<div id="skill-text-content">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-								Perferendis eos perspiciatis fugiat? Iure, soluta? Facere quos nobis aperiam fugiat
-								libero quaerat quasi deleniti, accusamus, possimus repellat, illo error alias magni.</p>
+							<p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in . NET. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers</p>
 						</div>
 					</div>
 
@@ -147,9 +144,7 @@
 						</div>
 							<div id="skill-text-content">
 								<h1>UNITY</h1>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-								Perferendis eos perspiciatis fugiat? Iure, soluta? Facere quos nobis aperiam fugiat
-								libero quaerat quasi deleniti, accusamus, possimus repellat, illo error alias magni.</p>
+								<p>Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Worldwide Developers Conference as a Mac OS X game engine. The engine has since been gradually extended to support a variety of desktop, mobile, console and virtual reality platforms.</p>
 							</div>
 					</div>
 
@@ -163,9 +158,7 @@
 						</div>
 						<div id="skill-text-content">
 							<h1>PhotoShop</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-							Perferendis eos perspiciatis fugiat? Iure, soluta? Facere quos nobis aperiam fugiat
-							libero quaerat quasi deleniti, accusamus, possimus repellat, illo error alias magni.</p>
+							<p>Photoshop is an image creation, graphic design and photo editing software developed by Adobe. The software provides many image editing features for pixel-based images, raster graphics and vector graphics. Adobe Photoshop was first released in 1988.</p>
 						</div>
 					</div>
 
@@ -248,11 +241,11 @@
 		document.addEventListener("scroll",ScrollAnimation);
 			function ScrollAnimation(){
 			
-			if(about_me_box.getBoundingClientRect().top < ScreenPositionY + -250){
+			if(about_me_box.getBoundingClientRect().top < ScreenPositionY -200){
 					
 				about_me_box.children[1].setAttribute("id","about-me-box-show");
 			}
-			else if(about_me_box.getBoundingClientRect().top < ScreenPositionY + -200)
+			else if(about_me_box.getBoundingClientRect().top < ScreenPositionY -100 )
 			{
 				about_me_border.setAttribute("id","about-me-border");
 			}
@@ -267,7 +260,7 @@
 		document.addEventListener("scroll",SkillScrollAnimation);
 			function SkillScrollAnimation(){
 
-					if(skill_border.getBoundingClientRect().top < ScreenPositionY -100)
+					if(skill_border.getBoundingClientRect().top < ScreenPositionY )
 					{
 							skill_border.setAttribute("id","skill-border");
 							
@@ -282,7 +275,7 @@
 			document.addEventListener("scroll",ProjectScrollAnimation);
 				function ProjectScrollAnimation(){
 
-					if(project_border.getBoundingClientRect().top < ScreenPositionY -100)
+					if(project_border.getBoundingClientRect().top < ScreenPositionY)
 					{
 							project_border.setAttribute("id","project-border");
 							

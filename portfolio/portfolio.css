@@ -5,13 +5,9 @@
 html{
 
 	scroll-behavior:smooth;
-	font-size:100%;
+
 }
 
-body{
-	font-size:14px;
-	
-}
 
 *{
 
@@ -53,12 +49,11 @@ body{
     
 	width:100%;
 	min-height:70vh;
-
 	display:flex;
 	flex-direction: column;;
 	justify-content:center;
 	align-items:center;
-	line-height:60px;
+
 	
 	
 	
@@ -70,7 +65,7 @@ body{
 #intro-text-box >h1{
 
 		color:transparent;
-		font-size:5rem;
+	
 		-webkit-text-stroke:1px white;
 		letter-spacing:4px;
 		font-family: 'Secular One', sans-serif;	
@@ -362,8 +357,8 @@ body{
 
 #tseringimage{
 
-	max-width:200px;
-	max-height:200px;	
+	max-width:150px;
+	max-height:150px;	
 	
 }
 
@@ -839,105 +834,200 @@ body{
 
 /* media query */
 
-@media screen  and (min-width:760px ) and (max-width:915px){
 
 
-	/* image  */
-	#tseringimage{
 
-		width:125px;
-		height:125px;
-		
-		
-	}
+@media screen  and  (max-width:760px){
+
+
 	#intro-text-box >h1{
 
-		font-size:5px;
-					
-		}
-		#line{
+		width:80%;
+		letter-spacing:1px;
 		
-			min-height:75%;
-			
-			
-		}
+
+   }
+
+   #intro-text-box h1> span{
+	font-size:40px;
+
+   }
+   #intro-text-box h1{
+	display: inline-block;
+	text-align: center;
+
+
+   }
 	
-	/* end */
-}
-@media screen  and (min-width:915px ) and (max-width:1024px){
+
+	#intro-text-box > p{
+
+		font-size:20px;
+		color:white;
+		position: relative;
+		
+		
+
+		
+	}
+	#intro-text{
+	
+		
+		line-height:40px;
+		margin-top:70px;
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		text-align: center;
+		
 
 
-	/* image  */
+	}
+	#intro-text-parent{
+
+		position: relative;
+		height:70vh;
+	}
+
 	#tseringimage{
 
-		width:160px;
-		height:160px;
+		max-width:90px;
+		max-height:90px;	
+		
+	}
+	#play-me{
+   
+		
+		margin-left: 25%;
+		
+	}
+
+	#image-background{
+
+
+
+		padding:1px;
+		position:absolute;
+		top:-50px;
+		left:44.5%;
+		transform: translate(-50%,-50%);
+
+		
 		
 		
 	}
-	#intro-text-box >h1{
-
-		font-size:5px;
-					
-		}
-	
-	/* end */
-}
-
-@media screen  and (min-width:200px ) and (max-width:753px){
-
-
-	/* image  */
-	#tseringimage{
-
-		width:90px;
-		height:90px;
-
+	#grey-background{
 		
+
+		width:90%;
 		
 	}
-	#line{
+
+	#socialmedia {
+
+		left:0%;
+		position:fixed;
 		
-		min-height:75%;
 		
-		
+
+
 	}
 	#socialmedia img{
-		width:40px;
-		height:40px;
+		width:30px;
+		height:30px;
 		
 		
+
+	}
+
+
+	#about-me-box > p{
+
+		margin-left:10%;
+		width:85%;
+		font-size: 12px;
+		
+
+		
+	}
+
+	#about-me-box > h1{
+
+		
+		margin-left:5%;
+		font-size:1.2rem;
+
+	}
+
+
+	#skill-content > div{
+		width:60%;
+		
+	
+	}
+
+	#skill-content{
+		margin-left:5%;
+		
+			
+			
+			
+	
+	}
+	#skill > h1{
+
+
+		margin-left:5%;
+		font-size:20px;
+	
+	
+	}
+	#project-content > h1{
+
+		
+		margin-left:5%;
+		font-size:20px;
 		
 		
 	}
-	
-#image-background{
-
-
-	border-radius:50%;
-	/* background-color:white; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position:absolute;
-	left:50%;
-	top:-3%;
-	padding:2px;
-	
+	#project-box 
+{	
+	margin-left:7%;
 
 	
-
+	
 	
 }
-	#intro-text-box >h1{
 
-			font-size:1rem;
-					
-		}
-	
-		#grey-background{
-			width:90%;
-		}
-	/* end */
+
 }
 
+@media only screen  and (max-width:1000px) and (min-width:600px)
+{
+
+
+
+	#tseringimage{
+
+		width:120px;
+		height:120px;
+	
+	}
+	
+	#image-background{
+
+
+		padding:7px;
+		
+	}
+	#project-box > div{
+
+	
+		width:230px;
+
+	
+	
+	
+	}
+}
